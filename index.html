@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Главная</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#!" class="logo">
+        <h1 class="logo__title">BigBen</h1>
+        <img
+          class="logo__img"
+          width="40"
+          height="40"
+          src="img/logo.svg"
+          alt=""
+        />
+      </a>
+      <input class="burger" id="burger" hidden type="checkbox">
+      <label class="burger__label" for="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </label>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="./about/">О нас</a></li>
+          <li class="nav__item"><a href="./schools/">Наши школы</a></li>
+          <li class="nav__item"><a href="./news/">Новости</a></li>
+          <li class="nav__item"><a href="./services/">Наши услуги</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <h2 class="main__title">
+        Школа дошкольного образования BigBen - это современное и качественное
+        образование для самых маленьких. Мы предлагаем программы обучения,
+        разработанные опытными педагогами и психологами, которые помогут вашему
+        ребенку развить свои интеллектуальные, коммуникативные и творческие
+        способности.
+      </h2>
+      <ol class="advantages">
+        <li class="advantages__item">
+          Квалифицированные педагоги. Наши педагоги имеют высшее образование и
+          постоянно совершенствуют свои навыки, проходя курсы и семинары. Они
+          обладают большим опытом работы с детьми и умеют находить
+          индивидуальный подход к каждому ребенку.
+        </li>
+        <li class="advantages__item">
+          Современные методики обучения. Мы используем самые передовые и
+          эффективные методики обучения, которые помогают детям развиваться
+          всесторонне.
+        </li>
+        <li class="advantages__item">
+          Индивидуальный подход. Мы учитываем особенности каждого ребенка и
+          создаем условия для его полноценного развития.
+        </li>
+        <li class="advantages__item">
+          Уютная атмосфера. Наш детский сад оборудован всем необходимым для
+          комфортного пребывания детей. Мы заботимся о том, чтобы дети
+          чувствовали себя как дома.
+        </li>
+        <li class="advantages__item">
+          Безопасность. Мы обеспечиваем высокий уровень безопасности наших
+          воспитанников. Территория детского сада находится под круглосуточным
+          видеонаблюдением, а также установлена система пожарной сигнализации.
+        </li>
+        <li class="advantages__item">
+          Квалифицированные педагоги. Наши педагоги имеют высшее образование и
+          постоянно совершенствуют свои навыки, проходя курсы и семинары. Они
+          обладают большим опытом работы с детьми и умеют находить
+          индивидуальный подход к каждому ребенку.
+        </li>
+        <li class="advantages__item">
+          Здоровое питание. Мы предлагаем детям здоровое и разнообразное
+          питание, приготовленное из свежих продуктов.
+        </li>
+        <li class="advantages__item">
+          Развитие творческих способностей. В нашем детском саду дети могут
+          заниматься различными видами творчества, такими как рисование, лепка,
+          музыка и танцы.
+        </li>
+        <li class="advantages__item">
+          Развивающие игры. Наши педагоги проводят с детьми увлекательные
+          развивающие игры, которые помогают им учиться и развиваться.
+        </li>
+      </ol>
+      <form class="demo" action="/">
+        <label class="demo__label" for="demo__name">
+          Запишитесь на пробное занятие
+        </label>
+        <input
+          id="demo__name"
+          class="demo__item"
+          type="text"
+          placeholder="Ваше имя"
+        />
+        <input type="email" class="demo__item" placeholder="Ваша почта" />
+        <button class="demo__submit" type="submit">Отправить</button>
+      </form>
+      <form action="/" class="booking">
+        <label for="booking__option" class="booking__label"
+          >...или закажите услугу</label
+        >
+        <select id="booking__option" class="booking__option">
+          <option>Группа полного дня</option>
+          <option>Группа кратковременного пребывания</option>
+          <option>Группы по уходу за детьми</option>
+          <option>Группы развития речи</option>
+          <option>Группы подготовки к школе</option>
+          <option>Группы творческого развития</option>
+          <option>Группы изучения иностранных языков</option>
+        </select>
+        <input type="text" class="booking__item" placeholder="Ваше ФИО" />
+        <input type="email" class="booking__item" placeholder="Ваша почта" />
+        <input
+          type="tel"
+          class="booking__item"
+          placeholder="Ваш номер телефона"
+        />
+        <input
+          type="date"
+          class="booking__item"
+        />
+        <button type="submit" class="booking__submit">Записаться</button>
+      </form>
+      <div class="teachers">
+        <h2 class="teachers__title">Наши преподаватели</h2>
+        <article class="teachers__item">
+          <div class="teachers__info">
+            <h3 class="teachers__name">Бондаренко Елена Анатольевна</h3>
+            <div class="teachers__img-wrapper">
+              <img
+                width="420"
+                class="teachers__img"
+                src="img/bondarenko.jpg"
+                alt="Фото Бондаренко Елены Анатольевны"
+              />
+            </div>
+          </div>
+          <ul class="teachers__desc">
+            <li class="teachers__desc-item">
+              Профессия: Преподаватель дошкольного образования
+            </li>
+            <li class="teachers__desc-item">
+              Образование: Высшее педагогическое образование, курсы повышения
+              квалификации по дошкольному образованию
+            </li>
+            <li class="teachers__desc-item">
+              Опыт работы: Более 10 лет опыта работы в детских садах и центрах
+              дошкольного образования
+            </li>
+            <li class="teachers__desc-item">
+              Навыки: Владение современными методиками обучения, индивидуальный
+              подход к детям, организация развивающих занятий и игр, знание
+              детской психологии.
+            </li>
+          </ul>
+        </article>
+        <article class="teachers__item">
+          <div class="teachers__info">
+            <h3 class="teachers__name">Селезнёва Мария Николаевна</h3>
+            <div class="teachers__img-wrapper">
+              <img
+                width="420"
+                class="teachers__img"
+                src="img/selezneva.webp"
+                alt="Фото Селезнёвой Марии Николаевной"
+              />
+            </div>
+          </div>
+          <ul class="teachers__desc">
+            <li class="teachers__desc-item">
+              Профессия: Воспитатель дошкольного образования
+            </li>
+            <li class="teachers__desc-item">
+              Образование: Среднее специальное педагогическое образование,
+              дополнительное образование по специальности “Дошкольное
+              образование”
+            </li>
+            <li class="teachers__desc-item">
+              Опыт работы: Более 5 лет опыта работы воспитателем в детских
+              садах, участие в образовательных проектах и программах
+            </li>
+            <li class="teachers__desc-item">
+              Навыки: Организация режима дня, проведение развивающих занятий,
+              подготовка детей к школе, знание основ детской психологии и
+              педагогики, навыки общения с родителями.
+            </li>
+          </ul>
+        </article>
+        <article class="teachers__item">
+          <div class="teachers__info">
+            <h3 class="teachers__name">Климчак Анна Юрьевна</h3>
+            <div class="teachers__img-wrapper">
+              <img
+                width="420"
+                class="teachers__img"
+                src="img/klimchak.jpeg"
+                alt="Фото Климчак Анны Юрьевны"
+              />
+            </div>
+          </div>
+          <ul class="teachers__desc">
+            <li class="teachers__desc-item">
+              Профессия: Логопед-дефектолог дошкольного образования
+            </li>
+            <li class="teachers__desc-item">
+              Образование: Высшее образование по специальности “Логопедия”,
+              курсы повышения квалификации, опыт работы с детьми с особенностями
+              развития
+            </li>
+            <li class="teachers__desc-item">
+              Опыт работы: Опыт работы более 7 лет в детских садах и
+              коррекционных центрах, работа с различными нарушениями развития
+              речи и поведения детей
+            </li>
+            <li class="teachers__desc-item">
+              Навыки: Диагностика и коррекция нарушений развития речи,
+              проведение индивидуальных и групповых занятий, работа с
+              родителями, знание современных методик и подходов в области
+              дошкольного образования.
+            </li>
+          </ul>
+        </article>
+      </div>
+      <section class="news">
+        <h2 class="news__title">Новости</h2>
+        <div class="news__item">
+          <img class="news__item-img" src="img/open-doors.jpg" alt="Фото новости" />
+          <p class="news__item-desc">
+            “В нашем детском саду проходит неделя открытых дверей! Родители
+            могут прийти и познакомиться с нашими педагогами, узнать о наших
+            программах и мероприятиях. Ждем вас!”
+            <br>
+            <span class="news__item-date">Дата публикации: 10.02.2024</span>
+          </p>
+        </div>
+        <div class="news__item">
+          <img class="news__item-img" src="img/best.jpg" alt="Фото новости" />
+          <p class="news__item-desc">
+            “Наш детский сад стал победителем конкурса “Лучший детский сад
+            года”! Мы очень гордимся этим достижением и благодарим всех наших
+            воспитанников и родителей за поддержку.”
+            <br>
+            <span class="news__item-date">Дата публикации: 03.02.2024</span>
+          </p>
+        </div>
+        <div class="news__item">
+          <img class="news__item-img" src="img/igrov_lab.jpg" alt="Фото новости" />
+          <p class="news__item-desc">
+            “Мы обновили нашу игровую площадку! Теперь у наших малышей есть
+            новые интересные игрушки и игровые комплексы. Приходите посмотреть!”
+            <br>
+            <span class="news__item-date">Дата публикации: 25.01.2024</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__contacts">
+        <li class="footer__contacts-item">
+          <span class="footer__contacts-desc">Наш телефон:</span>
+          <a class="footer__contacts-link" href="tel:88005553535"
+            >8-800-555-35-35
+          </a>
+        </li>
+        <li class="footer__contacts-item">
+          <span class="footer__contacts-desc">Наша почта:</span>
+          <a class="footer__contacts-link" href="mailto:bigben@yandex.ru"
+            >bigben@yandex.ru</a
+          >
+        </li>
+        <li class="footer__contacts-item">
+          <span class="footer__contacts-desc">Наш телеграм:</span>
+          <a class="footer__contacts-link" href="https://t.me/bigbenschool"
+            >https://t.me/bigbenschool</a
+          >
+        </li>
+        <li class="footer__contacts-item">
+          <span class="footer__contacts-desc">Наша группа Вконтакте:</span>
+          <a class="footer__contacts-link" href="https://vk.com/bigbenschool"
+            >https://vk.com/bigbenschool</a
+          >
+        </li>
+        <li class="footer__contacts-item">
+          <span class="footer__contacts-desc">Наш адрес:</span>
+          <a
+            class="footer__contacts-link"
+            href="https://yandex.ru/maps/193/voronezh/house/ulitsa_9_yanvarya_68k1/Z0AYdwBpT0IGQFtrfXp3d3RqZg==/"
+            >Воронеж, улица 9 Января, 68, корп. 1</a
+          >
+        </li>
+      </ul>
+      <div class="footer__logo-wrapper">
+        <img class="footer__logo" src="img/logo.svg" alt="" width="240" height="240">
+      </div>
+    </footer>
+  </body>
+</html>

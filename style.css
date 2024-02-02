@@ -1,0 +1,421 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+  transition: .15s linear;
+}
+
+.header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+.logo__title {
+  margin: 0;
+}
+
+.burger:checked + .burger__label {
+  transform: rotate(90deg);
+}
+
+.burger__label {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.burger__line {
+  display: block;
+  background-color: #111;
+  width: 16px;
+  height: 2px;
+}
+
+.nav {
+  transition: .3s linear;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+}
+
+.nav__item {
+  margin-left: 20px;
+}
+
+.nav__link {
+  font-size: 18px;
+}
+
+.nav__link:hover {
+  color: dimgrey;
+}
+
+.main {
+  padding: 20px;
+  margin: 90.4px 0 280px;
+}
+
+.advantages .advantages__item {
+  margin-top: 8px;
+}
+
+.demo, .booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  border: 2px solid;
+  padding: 16px;
+  margin: 20px 0;
+  border-radius: 10px;
+  max-width: 560px;
+}
+
+.demo__item, .booking__item, .booking__option {
+  max-width: 320px;
+  border-radius: 8px;
+  border-style: solid;
+  padding: 8px;
+}
+
+.demo__submit, .booking__submit {
+  max-width: 120px;
+  background-color: #111;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  color: aliceblue;
+}
+
+.teachers {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.teachers__item {
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  padding: 16px 32px;
+  border-radius: 16px;
+}
+
+.teachers__name {
+  margin: 12px 0;
+}
+
+.teachers__img {
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.teachers__img-wrapper {
+  width: 420px;
+  max-height: 240px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.news__item {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  background-color: #eee;
+  padding: 16px 32px;
+  border-radius: 8px;
+}
+
+.news__item-img {
+  width: 420px;
+  max-height: 240px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.news__item-desc {
+  max-width: 640px;
+  font-weight: bold;
+}
+
+.schools__img {
+  width: 640px;
+  border-radius: 8px;
+}
+
+.schools__contact {
+  font-weight: bold;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  color: aliceblue;
+  padding: 20px 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.footer__contacts {
+  list-style: none;
+}
+
+.footer__contacts-link:hover {
+  color: dimgrey;
+}
+
+.footer__contacts-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.footer__contacts-item::before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.footer__contacts-item:nth-of-type(1)::before {
+  background: url(img/phone.svg) no-repeat;
+}
+.footer__contacts-item:nth-of-type(2)::before {
+  background: url(img/mail.svg) no-repeat;
+}
+.footer__contacts-item:nth-of-type(3)::before {
+  background: url(img/telegram.svg) no-repeat;
+}
+.footer__contacts-item:nth-of-type(4)::before {
+  background: url(img/vk.svg) no-repeat;
+}
+.footer__contacts-item:nth-of-type(5)::before {
+  background: url(img/pin.svg) no-repeat;
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  width: 240px;
+  height: 240px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1280px) {
+  .main {
+    margin-bottom: 200px;
+  }
+
+  .teachers__img-wrapper {
+    width: 320px;
+  }
+
+  .teachers__img {
+    width: 320px;
+  }
+
+  .teachers__desc-item {
+    font-size: 12px;
+  }
+
+  .news__item {
+    font-size: 12px;
+    gap: 12px;
+  }
+
+  .news__item-img {
+    width: 320px;
+  }
+
+  .news__item-desc {
+    max-width: 360px;
+  }
+
+  .footer {
+    padding: 20px 60px;
+  }
+
+  .footer__logo-wrapper {
+    width: 160px;
+    height: 160px;
+  }
+
+  .footer__logo {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .teachers__item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teachers__img-wrapper {
+    width: 100%;
+  }
+
+  .teachers__img {
+    width: 100%;
+  }
+
+  .news__item-img {
+    width: 240px;
+  }
+
+  .schools__img {
+    width: 100%;
+    max-width: 540px;
+    border-radius: 8px;
+  }
+
+  .footer {
+    padding: 20px;
+    gap: 0;
+  }
+
+  .footer__contacts-item {
+    max-width: 420px;
+    font-size: 12px;
+  }
+
+  .footer__contacts-link {
+    font-size: 12px;
+  }
+
+  .footer__logo-wrapper {
+    display: none;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .burger__label {
+    display: flex;
+    z-index: 20;
+  }
+
+  .burger:checked ~ .nav {
+    right: 0;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -209px;
+    height: 100vh;
+    z-index: 10;
+  }
+
+  .nav__list {
+    position: relative;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    padding: 0 40px;
+    gap: 24px;
+    height: 100%;
+    z-index: inherit;
+  }
+
+  .nav__item {
+    z-index: inherit;
+  }
+
+  .main {
+    margin-bottom: 414px;
+  }
+
+  .advantages {
+    padding-inline-start: 10px;
+  }
+
+  .demo, .booking {
+    max-width: 280px;
+  }
+
+  .booking__option, .booking__item, .demo__item {
+    max-width: 240px;
+    font-size: 12px;
+  }
+
+  .news__item-img {
+    width: 120px;
+  }
+
+  .news__item-desc {
+    max-width: 160px;
+    font-size: 10px;
+  }
+
+  .footer {
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: -1;
+  }
+
+  .footer__contacts {
+    gap: 4px;
+  }
+
+  .footer__contacts-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__contacts-item:nth-of-type(-n + 4) {
+    margin-bottom: 16px;
+  }
+
+  .footer__contacts-item::before {
+    display: inline-block;
+  }
+}

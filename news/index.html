@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../normalize.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Новости</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../" class="logo">
+        <h1 class="logo__title">BigBen</h1>
+        <img
+          class="logo__img"
+          width="40"
+          height="40"
+          src="../img/logo.svg"
+          alt=""
+        />
+      </a>
+      <input class="burger" id="burger" hidden type="checkbox">
+      <label class="burger__label" for="burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </label>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../about/">О нас</a></li>
+          <li class="nav__item"><a href="../schools/">Наши школы</a></li>
+          <li class="nav__item"><a href="#!">Новости</a></li>
+          <li class="nav__item"><a href="../services/">Наши услуги</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="news">
+        <h2 class="news__title">Новости</h2>
+        <div class="news__item">
+          <img class="news__item-img" src="../img/open-doors.jpg" alt="Фото новости" />
+          <p class="news__item-desc">
+            “В нашем детском саду проходит неделя открытых дверей! Родители
+            могут прийти и познакомиться с нашими педагогами, узнать о наших
+            программах и мероприятиях. Ждем вас!”
+            <br>
+            <span class="news__item-date">Дата публикации: 10.02.2024</span>
+          </p>
+        </div>
+        <div class="news__item">
+          <img class="news__item-img" src="../img/best.jpg" alt="Фото новости" />
+          <p class="news__item-desc">
+            “Наш детский сад стал победителем конкурса “Лучший детский сад
+            года”! Мы очень гордимся этим достижением и благодарим всех наших
+            воспитанников и родителей за поддержку.”
+            <br>
+            <span class="news__item-date">Дата публикации: 03.02.2024</span>
+          </p>
+        </div>
+        <div class="news__item">
+          <img class="news__item-img" src="../img/igrov_lab.jpg" alt="Фото новости" />
+          <p class="news__item-desc">
+            “Мы обновили нашу игровую площадку! Теперь у наших малышей есть
+            новые интересные игрушки и игровые комплексы. Приходите посмотреть!”
+            <br>
+            <span class="news__item-date">Дата публикации: 25.01.2024</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="footer__contacts">
+        <li class="footer__contacts-item">
+          <span class="footer__contacts-desc">Наш телефон:</span>
+          <a class="footer__contacts-link" href="tel:88005553535"
+            >8-800-555-35-35
+          </a>
+        </li>
+        <li class="footer__contacts-item">
+          <span class="footer__contacts-desc">Наша почта:</span>
+          <a class="footer__contacts-link" href="mailto:bigben@yandex.ru"
+            >bigben@yandex.ru</a
+          >
+        </li>
+        <li class="footer__contacts-item">
+          <span class="footer__contacts-desc">Наш телеграм:</span>
+          <a class="footer__contacts-link" href="https://t.me/bigbenschool"
+            >https://t.me/bigbenschool</a
+          >
+        </li>
+        <li class="footer__contacts-item">
+          <span class="footer__contacts-desc">Наша группа Вконтакте:</span>
+          <a class="footer__contacts-link" href="https://vk.com/bigbenschool"
+            >https://vk.com/bigbenschool</a
+          >
+        </li>
+        <li class="footer__contacts-item">
+          <span class="footer__contacts-desc">Наш адрес:</span>
+          <a
+            class="footer__contacts-link"
+            href="https://yandex.ru/maps/193/voronezh/house/ulitsa_9_yanvarya_68k1/Z0AYdwBpT0IGQFtrfXp3d3RqZg==/"
+            >Воронеж, улица 9 Января, 68, корп. 1</a
+          >
+        </li>
+      </ul>
+      <div class="footer__logo-wrapper">
+        <img class="footer__logo" src="../img/logo.svg" alt="" width="240" height="240">
+      </div>
+    </footer>
+  </body>
+</html>
